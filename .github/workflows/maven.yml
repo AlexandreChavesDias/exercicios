@@ -27,9 +27,10 @@ jobs:
       with:
         distribution: 'adopt'
         java-version: '17'
+        cache: maven
 
     - name: Build with Maven
-      run: mvn -b package --file exercicios/pom.xml
+      run: mvn -B package --file pom.xml
 
     - name: Analyze Sonar
       run: |

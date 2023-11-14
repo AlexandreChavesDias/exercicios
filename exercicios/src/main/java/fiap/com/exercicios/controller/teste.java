@@ -11,6 +11,6 @@ import lombok.RequiredArgsConstructor;
 public class teste {
     @GetMapping
     public String listAssociates() {
-    	return "testess";
+    	return "testes";
     }
 }

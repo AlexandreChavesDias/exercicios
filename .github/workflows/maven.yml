@@ -47,6 +47,7 @@ jobs:
         cache: maven
 
     - name: SonarQube Scan
+    
       run: |
         cd exercicios  # Change to your project directory
         mvn clean install -Psonar

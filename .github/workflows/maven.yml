@@ -31,6 +31,3 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B test --file ./exercicios/pom.xml
-      
-    - name: Run Tests
-      run: mvn test

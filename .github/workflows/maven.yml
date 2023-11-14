@@ -29,5 +29,8 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
 
-    - name: Build with Maven
+    - name: testes
       run: mvn -B test --file ./exercicios/pom.xml
+
+    - name: Build with Maven
+      run: mvn -B clean install

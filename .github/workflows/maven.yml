@@ -23,6 +23,7 @@ jobs:
 
     - name: SonarQube Scan
       run: |
+        cd exercicios  # Change to your project directory
         mvn clean install -Psonar
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
